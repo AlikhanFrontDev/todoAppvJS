@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="fontawesome-iconpicker"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
+    />
+    <title>to do app</title>
+  </head>
+  <body>
+    <header>
+      <h1>To do project with vanilla js</h1>
+    </header>
+    <form>
+      <input
+        type="text"
+        name="todo"
+        class="todo-input"
+        placeholder="add new todo..."
+        autocomplete="off"
+      />
+      <button class="todo-add-button">
+        <i class="fa-solid fa-square-plus"></i>
+      </button>
+      <div class="select">
+        <select name="filter" class="filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+    <div class="container-todo">
+      <div class="list"></div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/90e960e05f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
